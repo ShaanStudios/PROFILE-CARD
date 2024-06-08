@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+:root {
+    --box-shadow-color: rgb(0, 238, 255);
+  }
+
+.container {
+    border-radius: 15px;
+    padding: 10px;
+    border-color: aqua;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0px 3px 5px 0px var(--box-shadow-color);
+    transition: box-shadow 1s ease-in-out,
+    border-color 1s ease-in-out;
+}
+.profile {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+}
+.logo {
+    background-size: cover;
+    max-width: 200px;
+    max-height: 200px;
+    background-image: url(logo.png);
+}
+.yazilogo {
+    font-size: 30px;
+    margin-top: 80px;
+    font-style: oblique;
+    color: turquoise;
+}
+
+.bilgi {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: large;
+}
+.buttons {
+    display: flex;
+    border-color: white;
+    width: auto;
+    border-width: 2px;
+    border-radius: 15px;
+    border-style: solid;
+    padding: 5px;
+    margin-top: 3px;
+}
+.buttonz {
+    border-radius: 15px;
+    border-style: solid;
+    border-color: cadetblue;
+    border-width: 2px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    transition: 0.2s;
+}
+.buttonz:hover {
+    border-color: rgb(98, 205, 209);
+    filter: brightness(150%);
+}
